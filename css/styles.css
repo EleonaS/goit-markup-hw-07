@@ -895,7 +895,7 @@ img {
 .modal-close-button:focus {
   fill: var(--accent-color);
 }
-
+/*
 .feature-icons {
   display: flex;
   justify-content: center;
@@ -907,7 +907,7 @@ img {
   background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
-
+*/
 .form-group {
   display: flex;
   flex-direction: column;
