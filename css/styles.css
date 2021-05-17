@@ -242,7 +242,7 @@ ul {
   background-size: cover;
 }
 
-.conteiner .hero-content {
+.hero__content {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -250,11 +250,11 @@ ul {
   text-align: center;
 }
 
-.hero-content {
+.hero__content {
   width: calc((100% / 12) * 7);
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   color: var(--hero-text-color);
   font-weight: 900;
@@ -265,7 +265,7 @@ ul {
 }
 
 /*Button*/
-.hero-button {
+.hero__button {
   margin-right: auto;
   margin-left: auto;
   min-width: 200px;
@@ -286,7 +286,7 @@ ul {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 }
 
-.button {
+.filter__button {
   padding: 6px 22px;
   color: var(--primary-text-color);
   border: 0px;
@@ -304,8 +304,8 @@ ul {
     box-shadow var(--duration) var(--timing-function);
 }
 
-.button:hover,
-.button:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -321,7 +321,9 @@ ul {
   background-color: var(--secondary-bg-color);
 }
 
-.section-title {
+.work__title,
+.team__title,
+.clients__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -330,7 +332,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.feature-list {
+.features__list {
   display: flex;
   flex-wrap: nowrap;
   padding: 0px;
@@ -339,13 +341,13 @@ ul {
   margin-left: -30px;
 }
 
-.feature-list > .feature-item {
+.features__list > .features__item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.feature-title {
+.features__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -354,8 +356,8 @@ ul {
   text-transform: uppercase;
 }
 
-/*Feature-icons*/
-.feature-icons {
+/*features__ icon*/
+.features__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,7 +376,7 @@ ul {
 
 /*Occupation*/
 
-.work.section {
+.work {
   padding-top: 0px;
 }
 
@@ -389,6 +391,8 @@ ul {
 .work__list > .work__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   text-align: center;
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .work__img {
@@ -421,10 +425,6 @@ img {
 }
 
 /*Team*/
-.item {
-  margin-top: 30px;
-  margin-left: 30px;
-}
 
 .team__list {
   display: flex;
@@ -435,7 +435,8 @@ img {
 
 .team__item {
   flex-basis: calc((100% - 4 * 30px) / 4);
-
+  margin-top: 30px;
+  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -444,7 +445,7 @@ img {
   margin-top: 0;
 }
 
-.title-item {
+.features__item {
   margin-top: 0;
   line-height: 1.71;
 }
@@ -470,9 +471,9 @@ img {
   line-height: 1.19;
 }
 
-.title-item,
+.features__text,
 .team__position,
-.work-title-item {
+.portfolio__text {
   color: var(--secondary-text-color);
 }
 
@@ -621,7 +622,7 @@ img {
   align-content: center;
 }
 
-.feature-title.conect {
+.features__title.conect {
   color: var(--hero-text-color);
   margin-bottom: 20px;
 }
@@ -712,61 +713,76 @@ img {
 }
 
 /*PORTFOLIO*/
-.btn-p {
+.filter {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.button {
+.filter__button {
+  padding: 6px 22px;
+  color: var(--primary-text-color);
+  border: 0px;
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  padding: 6px 22px;
+
+  transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
-.button-list {
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter__list {
   display: inline-flex;
   margin-right: auto;
   margin-left: auto;
 }
 
-.button-list .button {
+.filter__list .button {
   display: block;
 }
 
-.button-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-
+/*
 .works-foto {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-.portfolio-item {
+*/
+.portfolio__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.portfolio-link {
+.portfolio__link {
   display: block;
   transition: box-shadow var(--duration) var(--timing-function);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   border: 1px solid var(--portfolio-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list {
+.portfolio__list {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -777,7 +793,7 @@ img {
   margin-top: -30px;
 }
 
-.portfolio-content {
+.portfolio__content {
   padding: 20px 0 20px 24px;
   background: var(--primary-bg-color);
   border-right: 1px solid var(--portfolio-border);
@@ -785,7 +801,7 @@ img {
   border-left: 1px solid var(--portfolio-border);
 }
 
-.work-title {
+.portfolio__title {
   color: var(--primary-text-color);
   margin-bottom: 4px;
   font-weight: 700;
@@ -794,14 +810,14 @@ img {
   letter-spacing: 0.06em;
 }
 
-.work-title-item {
+.portfolio__text {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
 }
 
 /*Overlay*/
-.box {
+.portfolio__thumb {
   position: relative;
   width: 100%;
   height: 100%;
@@ -810,11 +826,11 @@ img {
   overflow: hidden;
 }
 
-.box:hover .overlay {
+.portfolio__thumb:hover .potfolio__overlay {
   transform: translatey(0);
 }
 
-.overlay {
+.potfolio__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -826,7 +842,7 @@ img {
   transition: transform var(--duration) var(--timing-function);
 }
 
-.overlay > p {
+.portfolio__overlay--text {
   color: var(--hero-text-color);
 
   margin: 0;
@@ -899,7 +915,7 @@ img {
   fill: var(--accent-color);
 }
 /*
-.feature-icons {
+.features__ icon {
   display: flex;
   justify-content: center;
   align-items: center;

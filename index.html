@@ -20,7 +20,7 @@
   <body>
     <header class="page-header">
       <div class="conteiner">
-        <nav class="nav page-header__nav">
+        <nav class="nav">
           <a class="link logo page-header__logo" href="#studio"
             ><span class="logo-part-one">Web</span><span class="logo-part-two">Studio</span>
           </a>
@@ -57,9 +57,9 @@
       <!--Герой-->
       <section class="hero" id="studio">
         <div class="conteiner">
-          <div class="hero-content">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <div class="hero__content">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -67,47 +67,49 @@
       <section class="section">
         <!--спрятать заголовок-->
         <div class="conteiner">
-          <h2 class="section-title visually-hidden">Особенности</h2>
-          <ul class="feature-list">
-            <li class="feature-item icon-antenna">
-              <div class="feature-icons">
-                <svg class="feature-icon">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="title-item">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
             </li>
-            <li class="feature-item icon-clock">
-              <div class="feature-icons">
-                <svg class="feature-icon">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Пунктуальность</h3>
-              <p class="title-item">
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="feature-item icon-diagram">
-              <div class="feature-icons">
-                <svg class="feature-icon">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Планирование</h3>
-              <p class="title-item">
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="feature-item icon-astronaut">
-              <div class="feature-icons">
-                <svg class="feature-icon">
+            <li class="features__item">
+              <div class="features__icon">
+                <svg width="70" height="70">
                   <use href="./images/icons/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Современные технологии</h3>
-              <p class="title-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
@@ -115,7 +117,7 @@
       <!--Чем мы занимаемся-->
       <section class="work section">
         <div class="conteiner">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
               <div class="work__img">
@@ -129,7 +131,7 @@
               <div class="work__img">
                 <img src="./images/box2.jpg" alt="Ноутбук" width="370" />
                 <div class="work__label">
-                  <p class="work__text">Мобильные приложения</p>
+                  <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </div>
               </div>
             </li>
@@ -137,7 +139,7 @@
               <div class="work__img">
                 <img src="./images/box3.jpg" alt="Планшет" width="370" />
                 <div class="work__label">
-                  <p class="work__text">Дизайнерские решения</p>
+                  <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </div>
               </div>
             </li>
@@ -146,9 +148,9 @@
       </section>
 
       <!--Команда-->
-      <section class="section">
+      <section class="team section">
         <div class="conteiner">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <img class="team__foto" src="./images/foto1.jpg" alt="Product Designer" width="270" />
@@ -382,7 +384,7 @@
       <!--Клиенты-->
       <section class="section">
         <div class="conteiner">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
@@ -452,7 +454,7 @@
           </address>
         </div>
         <div class="conect-box">
-          <h3 class="feature-title conect">Присоединяйтесь</h3>
+          <h3 class="features__title conect">Присоединяйтесь</h3>
           <ul class="social-icons c-list">
             <li class="social-icons__item">
               <a
@@ -505,7 +507,7 @@
           </ul>
         </div>
         <div class="subscribe-box">
-          <h3 class="feature-title conect">Подпишитесь на рассылку</h3>
+          <h3 class="features__title conect">Подпишитесь на рассылку</h3>
           <div class="footer-form">
             <div class="footer-form-item">
               <label for="footer-email" class="footer-form-label"></label>
