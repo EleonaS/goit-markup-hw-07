@@ -119,13 +119,14 @@ p {
   margin-right: 93px;
 }
 
+.logo__footer {
+  margin: 0px;
+}
+
 .logo__text {
   color: var(--accent-color);
 }
 
-.logo__footer {
-  margin: 0px;
-}
 .logo__text--white {
   color: var(--hero-text-color);
 }
@@ -167,7 +168,6 @@ ul {
 }
 
 .nav__item:not(:last-child) {
-  /*outline: 1px solid red;*/
   margin-right: 50px;
 }
 
