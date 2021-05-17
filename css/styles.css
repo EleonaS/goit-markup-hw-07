@@ -92,19 +92,43 @@ p {
   font-weight: 700;
 }
 
-.logo__part-one {
+/*.logo {
+  display: inline-block;
+
+  margin-right: 93px;
+  color: #000000;
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.web-logo {
   color: var(--accent-color);
 }
 
-.logo__part-two {
+
+
+.logo__text--white {
   color: var(--logo-text-color);
 }
-
+*/
 .logo {
   display: inline-block;
   margin-right: 93px;
 }
 
+.logo__text {
+  color: var(--accent-color);
+}
+
+.logo__footer {
+  margin: 0px;
+}
+.logo__text--white {
+  color: var(--hero-text-color);
+}
 /*Menu */
 /*.list {
   list-style: none;
@@ -513,6 +537,12 @@ img {
 
 .social-icons {
   display: inline-flex;
+  justify-content: center;
+}
+
+.footer .social-icons {
+  display: inline-flex;
+  justify-content: center;
 }
 
 .social-icons__svg {
@@ -564,10 +594,6 @@ img {
   align-items: baseline;
 }
 
-.logo-footer.link {
-  margin: 0px;
-}
-
 .footer {
   background-color: var(--footer-bg-color);
   padding-top: 60px;
@@ -600,10 +626,6 @@ img {
   margin-top: 9px;
 }
 
-.logo-part-t {
-  color: var(--hero-text-color);
-}
-
 .join {
   width: calc(100% / 12 * 3);
   justify-content: center;
@@ -617,10 +639,6 @@ img {
   text-transform: uppercase;
 }
 
-.social-icons {
-  display: flex;
-}
-
 .social-icons__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--hero-text-color);
@@ -628,7 +646,6 @@ img {
 }
 
 /*subscribe-box*/
-
 .subscribe {
   margin-left: auto;
 }
@@ -652,7 +669,7 @@ img {
   background-color: var(--footer-bg-color);
 }
 
-.footer-form-input::placeholder {
+.footer-form__input::placeholder {
   display: flex;
   align-items: center;
 
@@ -662,7 +679,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-submit-button {
+.footer-form__button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -690,11 +707,11 @@ img {
   transition: background-color var(--duration) var(--timing-function);
 }
 
-.footer-submit-button:hover {
+.footer-form__button:hover {
   background-color: var(--accent-color);
 }
 
-.submit-icon {
+.footer-form__icon {
   margin-left: 10px;
   top: 13px;
   bottom: 13px;
@@ -747,13 +764,7 @@ img {
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
-/*
-.works-foto {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-*/
+
 .portfolio__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
 
