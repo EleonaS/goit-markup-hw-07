@@ -1,0 +1,12 @@
+.join {
+  width: calc(100% / 12 * 3);
+  justify-content: center;
+  align-content: center;
+}
+
+.join__title/*,
+.subscribe__title */ {
+  color: var(--hero-text-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}

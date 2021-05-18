@@ -1,0 +1,74 @@
+@import './utils/variables';
+
+@import './base/common';
+@import './base/conteiner';
+
+@import './layout/page-header';
+
+@import './components/logo';
+
+@import './components/nav';
+/*.nav__link:hover,
+.nav__link:focus,
+
+.contacts__link:hover,
+.contacts__link:focus,*/
+.address__link:hover,
+.address__link:focus,
+.address__text:hover,
+.address__text:focus {
+  color: var(--accent-color);
+}
+
+@import './components/contacts';
+
+@import './components/hero';
+
+@import './layout/section';
+
+.work__title,
+.team__title,
+.clients__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+@import './components/futures';
+
+@import './components/work';
+
+@import './components/team';
+
+/*.features__text,
+.team__position,*/
+.portfolio__text {
+  color: var(--secondary-text-color);
+}
+
+@import './components/social-icons';
+
+@import './components/clients';
+
+@import './layout/footer';
+@import './components/address';
+
+@import './components/join';
+
+/*.join__title,
+.subscribe__title {
+  color: var(--hero-text-color);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}*/
+
+@import './components/footer-form';
+
+@import './components/portfolio';
+
+@import './components/modal';
+
+@import './components/form';

@@ -1,0 +1,23 @@
+.address {
+  margin: 20px 0px 0px;
+}
+
+.address__item {
+  margin-top: 9px;
+}
+
+.address__list {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.address__text {
+  text-decoration: none;
+  color: var(--hero-text-color);
+}
+
+.address__link {
+  text-decoration: none;
+  color: var(--footer-contact-color);
+  transition: color var(--duration) var(--timing-function);
+}
