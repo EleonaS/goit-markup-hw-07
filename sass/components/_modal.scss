@@ -34,25 +34,25 @@
   border-radius: 4px;
 
   transition: transform var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
-}
 
-.modal__button {
-  position: absolute;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: var(--primary-bg-color);
-  transition: color var(--duration) var(--timing-function);
-  cursor: pointer;
-}
+  &__button {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--primary-bg-color);
+    transition: color var(--duration) var(--timing-function);
+    cursor: pointer;
+  }
 
-.modal__button:hover,
-.modal__button:focus {
-  fill: var(--accent-color);
+  &__button:hover,
+  &__button:focus {
+    fill: var(--accent-color);
+  }
 }

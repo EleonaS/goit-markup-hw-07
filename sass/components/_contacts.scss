@@ -1,33 +1,37 @@
-.contacts__list {
-  display: inline-flex;
-  font-style: inherit;
-}
+.contacts {
+  display: block;
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
+  &__list {
+    display: inline-flex;
+    font-style: inherit;
+  }
 
-.contacts__item:not(:last-child) {
-  margin: 0px;
-}
-.contacts__link {
-  display: flex;
-  align-items: center;
+  &__item + &__item {
+    margin-left: 50px;
+  }
 
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color var(--duration) var(--timing-function);
-}
+  &__item:not(:last-child) {
+    margin: 0px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
 
-.contacts__icon {
-  margin-right: 10px;
-  stroke: currentColor;
-}
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color var(--duration) var(--timing-function);
+  }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
+  &__icon {
+    margin-right: 10px;
+    stroke: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+  }
 }

@@ -10,14 +10,14 @@
 .logo {
   display: inline-block;
   margin-right: 93px;
-}
 
-.logo__footer {
-  margin: 0px;
-}
+  &__footer {
+    margin: 0px;
+  }
 
-.logo__text {
-  color: var(--accent-color);
+  &__text {
+    color: var(--accent-color);
+  }
 }
 
 .logo__text--white {
