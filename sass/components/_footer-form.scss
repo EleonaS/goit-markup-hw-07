@@ -74,3 +74,7 @@
   bottom: 13px;
   fill: var(--primary-bg-color);
 }
+
+.subscribe__title--pro {
+  @extend %pro;
+}

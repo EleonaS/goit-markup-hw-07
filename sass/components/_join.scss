@@ -4,9 +4,6 @@
   align-content: center;
 }
 
-.join__title/*,
-.subscribe__title */ {
-  color: var(--hero-text-color);
-  margin-bottom: 20px;
-  text-transform: uppercase;
+.join__title--pro {
+  @extend %pro;
 }

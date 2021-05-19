@@ -40,6 +40,6 @@
   font-weight: 700;
 }
 
-.work__title {
-  @extend %title-stl;
+.work__title--stl {
+  @extend %stl;
 }

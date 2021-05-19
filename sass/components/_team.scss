@@ -42,18 +42,10 @@
   line-height: 1.19;
 }
 
-/*.features__text,
-.portfolio__text,*/
 .team__position {
   color: var(--secondary-text-color);
 }
 
-.team__title
-/*.clients__title, .work__title*/ {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+.team__title--stl {
+  @extend %stl;
 }

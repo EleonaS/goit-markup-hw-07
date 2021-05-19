@@ -22,7 +22,6 @@
   text-transform: uppercase;
 }
 
-/*features__ icon*/
 .features__icon {
   display: flex;
   justify-content: center;
@@ -43,8 +42,6 @@
   margin-top: 0;
   line-height: 1.71;
 }
-.features__text
-/*.team__position,
-.portfolio__text*/ {
-  color: var(--secondary-text-color);
+.features__text--cl {
+  @extend %cl;
 }

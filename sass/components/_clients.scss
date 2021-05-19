@@ -34,3 +34,7 @@
   height: 60px;
   fill: currentColor;
 }
+
+.clients__title--stl {
+  @extend %stl;
+}
